@@ -1,0 +1,123 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Karla', sans-serif;
+    font-size:1rem;
+    background-color: hsl(204, 43%, 93%);
+    padding:3em 0;
+}
+.container{
+    width:44%;
+    margin:0 auto;
+}
+.whited{
+    background-color:#ffffff;
+}
+.intro-content{
+    padding:1.4em;
+}
+.intro-content h1{
+    color:hsl(179, 62%, 43%) ;
+    font-size:1.4rem;
+}
+.intro-content h2{
+    color:hsl(71, 73%, 54%);
+    font-size:1.1rem;
+}
+.intro-content p{
+    color:#a19f9f;
+    line-height: 1.5em;
+}
+.row{
+    display:flex;
+    color:#ffffff;
+}
+.sub-content,.content-why-us{
+    width:50%;
+    padding:1.7em 1.5em;
+}
+.sub-content p .doll{
+    font-weight: 700;
+    font-size:1.9rem;
+}
+.sub-content p .month{
+    color:#A0F0F1;
+    font-weight: 400;
+}
+.sub-content button{
+    margin-top: 8px;
+    width:240px;
+    height:50px;
+    border-radius: 8px;
+    background-color: greenyellow;
+    color:hsl(204, 43%, 93%);
+    border:none;
+    font-size:1rem;
+    font-weight:700;
+    transition: width 1s, height 1s, font-size 1s;
+    box-shadow: 0 0 15px hsl(249, 9%, 54%);
+}
+.sub-content button:hover{
+    width:250px;
+    height:60px;
+    font-size:1.1rem;
+    box-shadow: 0 0 15px hsl(257, 12%, 70%);
+}
+.Cyan--color{
+    background-color:hsl(179, 62%, 43%) ;
+}
+.blue--color{
+    background-color: #4ABEBD;
+}
+.content-why-us p{
+    width: 80%;
+    font-size:0.9rem;
+    line-height: 1.4em;
+    margin-block-end:0em;
+    font-weight: 400;
+    color:#A0F0F1;
+}
+.content-why-us p+ p{
+   margin-block-start: 0em;
+}
+@media(max-width:1200px){
+    .row{
+        display: block;
+    }
+    .intro-content{
+        padding:1em;
+    }
+    .sub-content,.content-why-us{
+        width:100%;
+       
+    }
+    .content-why-us p{
+        width: 70%;
+    }
+}
+@media(max-width:599px)
+{
+    .container{
+        width:90%;
+    }
+  
+}
+@media(min-width:600px)and (max-width:889px)
+{
+    .container{
+        width:50%;
+    }
+    
+}
+@media(min-width:900px)and (max-width:1200px)
+{
+    body{
+        padding:10em 0;
+    }
+    .container{
+        width:60%;
+    }
+}
+
+
